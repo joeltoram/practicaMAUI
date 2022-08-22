@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMI.Views.BMICalculatorPage"
+             Title="Indice de Masa Corporal">
+    
+    <FlexLayout Padding="40" Direction="Column" JustifyContent="SpaceEvenly">
+        <StackLayout>
+            <Image
+                Source="imc.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label Text="Ingrese los Datos:" FontSize="30" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Blue"></Label>
+            <Label Text="Altura (cm):" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"></Label>
+
+            <Entry Text="{Binding Height}" FontSize="Large" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center"></Entry>
+            <Stepper Value="{Binding Height}" Minimum="20" Maximum="320" HorizontalOptions="Center"></Stepper>
+
+            <Label Text="Peso (kg):" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"></Label>
+
+            <Entry Text="{Binding Weight}" FontSize="Large" TextColor="Red" FontAttributes="Bold" HorizontalOptions="Center" ></Entry>
+            <Stepper Value="{Binding Weight}" Minimum="20" Maximum="320" HorizontalOptions="Center"></Stepper>
+
+            <Label Text="Puntaje:" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"></Label>
+            <Label Text="{Binding BMIScore}" FontSize="25" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Green"></Label>
+
+            <Label Text="Resultado:" HorizontalOptions="Center" FontAttributes="Bold" FontSize="20"></Label>
+            <Label Text="{Binding BMIResult}" FontSize="20" HorizontalOptions="Center" FontAttributes="Bold" TextColor="Green"></Label>
+
+
+
+
+
+
+
+
+        </StackLayout>
+        
+    </FlexLayout>
+    
+</ContentPage>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BMI.Views.EmployedPage"
+             xmlns:local="clr-namespace:BMI.ViewModels"
+             Title="EmployedPage">
+    <VerticalStackLayout>
+        <Label Text="Ingrese el nombre de la persona"></Label>
+        <Entry Text="{Binding EmName}"></Entry>
+
+        <Label Text="{Binding EmName}" VerticalOptions="Center" FontSize="Large"></Label>
+        <Button Text="Save" Command="{Binding SaveCommand}"></Button>
+
+    </VerticalStackLayout>
+</ContentPage>
